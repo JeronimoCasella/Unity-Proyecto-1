@@ -13,7 +13,7 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
+  - Wall
   - 
   - 
   - 
@@ -42,7 +42,7 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: world
+  - name: Level
     uniqueID: 400193649
     locked: 0
   - name: Player
