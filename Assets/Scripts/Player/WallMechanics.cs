@@ -37,6 +37,9 @@ public class WallMechanics : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private AudioSource JumpSound;
 
+    [SerializeField] private AudioSource dashSound; 
+    [SerializeField] private AudioClip dashClip;    
+
 
     private void Awake()
     {
@@ -183,6 +186,12 @@ public class WallMechanics : MonoBehaviour
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting = true;
+
+        if (dashSound != null && dashClip != null)
+        {
+            dashSound.PlayOneShot(dashClip); // Reproduce el sonido del dash
+        }
+
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
