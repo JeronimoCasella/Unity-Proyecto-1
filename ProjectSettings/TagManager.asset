@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - enemy
+  - Trap
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trap
   - Water
   - UI
   - Ground
@@ -47,6 +48,12 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2041923881
+    locked: 0
+  - name: 3
+    uniqueID: 3839960759
+    locked: 0
+  - name: 4
+    uniqueID: 34603909
     locked: 0
   - name: Ground and Walls
     uniqueID: 4064297603
